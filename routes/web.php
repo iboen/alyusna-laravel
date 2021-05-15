@@ -13,6 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
+
+Route::get('/', function () {
+    return view('home');
+});
+
+Route::get('/blog', function () {
+    return view('blog');
+});
+
+Route::get('/blog-single', function () {
+    return view('blog-single');
+});
+
+Route::get('/inner-page', function () {
+    return view('inner-page');
+});
+
+Route::get('/portfolio-details', function () {
+    return view('portfolio-details');
+});
+
