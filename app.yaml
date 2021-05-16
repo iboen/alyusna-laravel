@@ -1,0 +1,22 @@
+runtime: php74
+
+env_variables:
+  APP_NAME: Al-Yusna
+  APP_ENV: production
+  APP_DEBUG: false
+  LOG_CHANNEL: stack
+  LOG_LEVEL: critical
+  APP_KEY: YOUR_APP_KEY
+  APP_STORAGE: /tmp
+  VIEW_COMPILED_PATH: /tmp
+  SESSION_DRIVER: cookie
+
+handlers:
+- url: /(.*\.(gif|png|jpg|css|js))$
+  static_files: public/\1
+  upload: public/.*\.(gif|png|jpg|css|js)$
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
