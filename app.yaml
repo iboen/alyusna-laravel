@@ -12,7 +12,7 @@ env_variables:
   SESSION_DRIVER: cookie
 
 handlers:
-- url: /assets\/(.*\.(gif|png|jpg|css|js))$
+- url: /(.*\.(gif|png|jpg|css|js))$
   static_files: public/\1
   upload: public/.*\.(gif|png|jpg|css|js)$
 
