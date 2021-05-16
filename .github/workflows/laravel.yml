@@ -2,9 +2,9 @@ name: Laravel
 
 on:
   push:
-    branches: [ cicd ]
+    branches: [ main ]
   pull_request:
-    branches: [ cicd ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
