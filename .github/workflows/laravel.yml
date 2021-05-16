@@ -34,3 +34,17 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
+
+  appengine-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - id: deploy
+      uses: google-github-actions/deploy-appengine@main
+      with:
+        credentials: ${{ secrets.gcp_credentials }}
+
+    # Example of using the output
+    - id: test
+      run: curl "${{ steps.deploy.outputs.url }}"
