@@ -30,7 +30,7 @@
               </div>
 
               <h2 class="entry-title">
-                <a href="<?=url("/blog-single");?">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
+                <a href="<?=url("/blog-single");?>">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
               </h2>
 
               <div class="entry-meta">
