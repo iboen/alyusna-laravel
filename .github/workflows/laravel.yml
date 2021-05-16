@@ -47,7 +47,7 @@ jobs:
     - name: Install Dependencies
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
     - name: Generate key
-      run: sed -i '' "s#YOUR_APP_KEY#$(php artisan key:generate --show --no-ansi)#" app.yaml
+      run: sed -i "s#YOUR_APP_KEY#$(php artisan key:generate --show --no-ansi)#" app.yaml
     - id: deploy
       uses: google-github-actions/deploy-appengine@main
       with:

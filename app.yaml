@@ -1,7 +1,6 @@
 runtime: php72
 
 env_variables:
-  ## Put production environment variables here.
   APP_NAME: Al-Yusna
   APP_ENV: production
   APP_DEBUG: false
